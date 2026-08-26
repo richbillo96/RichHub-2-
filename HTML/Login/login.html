@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,29 +12,34 @@
 
 <body>
 
-    <main class="auth-container">
+    <div class="page">
 
-        <section class="auth-card">
+        <div class="auth-card">
 
+            <!-- BRAND -->
             <div class="brand">
-                <div class="brand-icon">R</div>
+                <div class="logo">R</div>
+
                 <h1>RichHub</h1>
-                <p>Build. Sell. Grow.</p>
+
+                <p>Build your store. Sell online. Grow.</p>
             </div>
 
 
             <!-- LOGIN -->
-
-            <div class="form-container" id="loginForm">
+            <section id="loginSection">
 
                 <h2>Welcome Back</h2>
-                <p class="form-subtitle">
+
+                <p class="description">
                     Login to your RichHub account
                 </p>
 
-                <form id="login">
+                <form id="loginForm">
 
-                    <label for="loginEmail">Email</label>
+                    <label for="loginEmail">
+                        Email
+                    </label>
 
                     <input
                         type="email"
@@ -44,7 +49,9 @@
                     >
 
 
-                    <label for="loginPassword">Password</label>
+                    <label for="loginPassword">
+                        Password
+                    </label>
 
                     <input
                         type="password"
@@ -54,46 +61,59 @@
                     >
 
 
-                    <button type="submit" class="main-button">
+                    <button
+                        type="submit"
+                        class="main-button"
+                    >
                         Login
                     </button>
 
                 </form>
 
+
                 <p class="switch-text">
                     Don't have an account?
 
-                    <button id="showSignup">
+                    <button
+                        type="button"
+                        id="showSignup"
+                    >
                         Create Account
                     </button>
                 </p>
 
-            </div>
+            </section>
 
 
             <!-- SIGN UP -->
-
-            <div class="form-container hidden" id="signupForm">
+            <section
+                id="signupSection"
+                class="hidden"
+            >
 
                 <h2>Create Account</h2>
 
-                <p class="form-subtitle">
-                    Start building your online store
+                <p class="description">
+                    Start your RichHub journey
                 </p>
 
-                <form id="signup">
+                <form id="signupForm">
 
-                    <label for="signupName">Full Name</label>
+                    <label for="signupName">
+                        Full Name
+                    </label>
 
                     <input
                         type="text"
                         id="signupName"
-                        placeholder="Enter your name"
+                        placeholder="Enter your full name"
                         required
                     >
 
 
-                    <label for="signupEmail">Email</label>
+                    <label for="signupEmail">
+                        Email
+                    </label>
 
                     <input
                         type="email"
@@ -103,7 +123,9 @@
                     >
 
 
-                    <label for="signupPassword">Password</label>
+                    <label for="signupPassword">
+                        Password
+                    </label>
 
                     <input
                         type="password"
@@ -114,31 +136,40 @@
                     >
 
 
-                    <button type="submit" class="main-button">
+                    <button
+                        type="submit"
+                        class="main-button"
+                    >
                         Create Account
                     </button>
 
                 </form>
 
+
                 <p class="switch-text">
                     Already have an account?
 
-                    <button id="showLogin">
+                    <button
+                        type="button"
+                        id="showLogin"
+                    >
                         Login
                     </button>
                 </p>
 
-            </div>
+            </section>
 
 
+            <!-- MESSAGE -->
             <div id="message"></div>
 
-        </section>
+        </div>
 
-    </main>
+    </div>
 
 
     <script src="hub.js"></script>
 
 </body>
-</html>
+
+    </html>
