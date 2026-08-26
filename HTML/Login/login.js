@@ -1,1 +1,1 @@
-alert( it is working );
+alert("hub.js is working!");
