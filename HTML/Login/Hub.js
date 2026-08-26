@@ -1,4 +1,7 @@
-const loginSection =
+const SUPABASE_URL = "https://tdrelswytmscpnkxmcgw.supabase.co";
+const SUPABASE_KEY = "YOUR_PUBLISHABLE_KEY";
+
+     const loginSection =
     document.getElementById("loginSection");
 
 const signupSection =
