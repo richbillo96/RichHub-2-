@@ -1,20 +1,32 @@
+const loginSection =
+    document.getElementById("loginSection");
 
-const loginForm = document.getElementById("loginForm");
-const signupForm = document.getElementById("signupForm");
+const signupSection =
+    document.getElementById("signupSection");
 
-const showSignupButton = document.getElementById("showSignup");
-const showLoginButton = document.getElementById("showLogin");
+const showSignup =
+    document.getElementById("showSignup");
 
-const message = document.getElementById("message");
+const showLogin =
+    document.getElementById("showLogin");
+
+const loginForm =
+    document.getElementById("loginForm");
+
+const signupForm =
+    document.getElementById("signupForm");
+
+const message =
+    document.getElementById("message");
 
 
 /* SHOW SIGN UP */
 
-showSignupButton.addEventListener("click", function () {
+showSignup.addEventListener("click", function () {
 
-    loginForm.classList.add("hidden");
+    loginSection.classList.add("hidden");
 
-    signupForm.classList.remove("hidden");
+    signupSection.classList.remove("hidden");
 
     message.textContent = "";
 
@@ -23,11 +35,11 @@ showSignupButton.addEventListener("click", function () {
 
 /* SHOW LOGIN */
 
-showLoginButton.addEventListener("click", function () {
+showLogin.addEventListener("click", function () {
 
-    signupForm.classList.add("hidden");
+    signupSection.classList.add("hidden");
 
-    loginForm.classList.remove("hidden");
+    loginSection.classList.remove("hidden");
 
     message.textContent = "";
 
@@ -36,73 +48,67 @@ showLoginButton.addEventListener("click", function () {
 
 /* LOGIN */
 
-document.getElementById("login").addEventListener(
-    "submit",
-    function (event) {
+loginForm.addEventListener("submit", function (event) {
 
-        event.preventDefault();
+    event.preventDefault();
 
-        const email =
-            document.getElementById("loginEmail").value;
+    const email =
+        document.getElementById("loginEmail").value.trim();
 
-        const password =
-            document.getElementById("loginPassword").value;
+    const password =
+        document.getElementById("loginPassword").value;
 
 
-        if (!email || !password) {
-
-            message.textContent =
-                "Please enter your email and password.";
-
-            return;
-        }
-
+    if (!email || !password) {
 
         message.textContent =
-            "Login system will be connected to Supabase next.";
+            "Please enter your email and password.";
 
+        return;
     }
-);
+
+
+    message.textContent =
+        "Connecting to RichHub...";
+
+});
 
 
 /* SIGN UP */
 
-document.getElementById("signup").addEventListener(
-    "submit",
-    function (event) {
+signupForm.addEventListener("submit", function (event) {
 
-        event.preventDefault();
+    event.preventDefault();
 
-        const name =
-            document.getElementById("signupName").value;
+    const name =
+        document.getElementById("signupName").value.trim();
 
-        const email =
-            document.getElementById("signupEmail").value;
+    const email =
+        document.getElementById("signupEmail").value.trim();
 
-        const password =
-            document.getElementById("signupPassword").value;
+    const password =
+        document.getElementById("signupPassword").value;
 
 
-        if (!name || !email || !password) {
-
-            message.textContent =
-                "Please fill in all fields.";
-
-            return;
-        }
-
-
-        if (password.length < 6) {
-
-            message.textContent =
-                "Password must be at least 6 characters.";
-
-            return;
-        }
-
+    if (!name || !email || !password) {
 
         message.textContent =
-            "Account system will be connected to Supabase next.";
+            "Please fill in all fields.";
 
+        return;
     }
-);
+
+
+    if (password.length < 6) {
+
+        message.textContent =
+            "Password must be at least 6 characters.";
+
+        return;
+    }
+
+
+    message.textContent =
+        "Creating your RichHub account...";
+
+});
