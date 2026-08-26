@@ -1,1 +1,3 @@
-alert("hub.js is working!");
+function doLogin(){
+  alert("Logging in.......");
+}
