@@ -1,4 +1,9 @@
-const showSignup =
+const SUPABASE_URL = "https://tdrelswytmscpnkxmcgw.supabase.co";
+
+const SUPABASE_KEY = "sb_publishable_t09l4fnt9ZGfnsc5bzxSdA_s64P1y_q";
+
+
+    const showSignup =
     document.getElementById("showSignup");
 
 const showLogin =
