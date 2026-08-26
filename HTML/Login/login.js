@@ -1,3 +1,1 @@
-function doLogin(){
-  alert("Logging in.......");
-}
+alert( it is working );
