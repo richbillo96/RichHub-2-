@@ -1,83 +1,36 @@
-const SUPABASE_URL = "https://tdrelswytmscpnkxmcgw.supabase.co";
+const SUPABASE_URL = "https://unxkcbeksmrcslyitilu.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_WWq_kvVFxV_KUkLyRf_muQ_Dl-hgFIk";
 
-const SUPABASE_KEY = "sb_publishable_t09l4fnt9ZGfnsc5bzxSdA_s64P1y_q";
+const supabaseClient = supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY
+);
 
+const loginForm = document.getElementById("loginForm");
+const message = document.getElementById("message");
 
-    const showSignup =
-    document.getElementById("showSignup");
+loginForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
 
-const showLogin =
-    document.getElementById("showLogin");
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
 
-const loginSection =
-    document.getElementById("loginSection");
+  message.textContent = "Logging in...";
 
-const signupSection =
-    document.getElementById("signupSection");
+  const { data, error } = await supabaseClient.auth.signInWithPassword({
+    email,
+    password
+  });
 
-const loginForm =
-    document.getElementById("loginForm");
+  if (error) {
+    message.textContent = error.message;
+    return;
+  }
 
-const signupForm =
-    document.getElementById("signupForm");
+  if (!data.user) {
+    message.textContent = "Login failed. Please try again.";
+    return;
+  }
 
-const message =
-    document.getElementById("message");
-
-
-// ==========================
-// SHOW SIGN UP
-// ==========================
-
-showSignup.addEventListener("click", function () {
-
-    loginSection.classList.add("hidden");
-
-    signupSection.classList.remove("hidden");
-
-    message.textContent = "";
-
-});
-
-
-// ==========================
-// SHOW LOGIN
-// ==========================
-
-showLogin.addEventListener("click", function () {
-
-    signupSection.classList.add("hidden");
-
-    loginSection.classList.remove("hidden");
-
-    message.textContent = "";
-
-});
-
-
-// ==========================
-// TEST LOGIN
-// ==========================
-
-loginForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    message.textContent =
-        "Login button is working.";
-
-});
-
-
-// ==========================
-// TEST SIGN UP
-// ==========================
-
-signupForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    message.textContent =
-        "Create Account button is working.";
-
+  window.location.href = "../dashboard/index.html";
 });
