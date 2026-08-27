@@ -1,3 +1,3 @@
 function goToStore() {
-    window.location.href = "../Store/store.html";
+    window.location.href = "../store/store.html";
 }
