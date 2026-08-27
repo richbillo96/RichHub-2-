@@ -32,5 +32,5 @@ loginForm.addEventListener("submit", async (event) => {
     return;
   }
 
-  window.location.href = "../dashboard/index.html";
+  window.location.href = "../dashboard/dashboard.html";
 });
