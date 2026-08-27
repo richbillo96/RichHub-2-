@@ -1,19 +1,25 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>RichHub Store</title>  <link rel="stylesheet" href="style.css">
+</head><body>  <header class="store-header"><div>
+  <h1 id="storeName">RichHub</h1>
+  <p id="storeDescription">Welcome to our store.</p>
+</div>
 
-    <title>RichHub Store</title>
+<button id="logoutButton">Log Out</button>
 
-    <link rel="stylesheet" href="store.css">
-</head>
+  </header>  <main><section>
+  <h2>Products</h2>
 
-<body>
+  <div id="products" class="products">
 
-    <!-- YOUR STORE CODE GOES HERE -->
+    <p>Loading products...</p>
 
-<button onclick="goToDashboard()">Dashboard</button>
-    <script src="store.js"></script>
-</body>
+  </div>
+
+</section>
+
+  </main>  <script type="module" src="script.js"></script></body>
 </html>
