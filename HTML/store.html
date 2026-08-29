@@ -1,25 +1,197 @@
-<!DOCTYPE html> 
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>RichHub Store</title>  <link rel="stylesheet" href="style.css">
-</head><body>  <header class="store-header"><div>
-  <h1 id="storeName">RichHub</h1>
-  <p id="storeDescription">Welcome to our store.</p>
-</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RichHub | Shop Everything You Need</title>
 
-<button id="logoutButton">Log Out</button>
+<link rel="stylesheet" href="style.css">
 
-  </header>  <main><section>
-  <h2>Products</h2>
+</head><body><!-- NAVIGATION -->
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html">RichHub</a>
+    </div>
 
-  <div id="products" class="products">
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#categories">Categories</a>
+    </nav>
 
-    <p>Loading products...</p>
+    <div class="nav-actions">
+        <a href="HTML/login.html" class="login-btn">Log In</a>
+        <a href="HTML/signup.html" class="signup-btn">Sign Up</a>
+        <button class="cart-btn">
+            🛒 Cart <span id="cart-count">0</span>
+        </button>
+    </div>
+</header>
 
-  </div>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <p class="hero-tag">SHOP SMART. LIVE BETTER.</p>
+
+        <h1>
+            Discover Products
+            <span>You’ll Love.</span>
+        </h1>
+
+        <p class="hero-description">
+            Shop quality products from trusted stores and discover
+            amazing items at great prices.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="primary-btn">Shop Now</a>
+            <a href="#categories" class="secondary-btn">Explore Categories</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/shopping.jpg" alt="Shopping products">
+    </div>
 
 </section>
 
-  </main>  <script type="module" src="script.js"></script></body>
-</html>
+
+<!-- SEARCH -->
+<section class="search-section">
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search for products..."
+        >
+
+        <button id="search-btn">Search</button>
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+<section class="categories" id="categories">
+
+    <div class="section-heading">
+        <p>EXPLORE</p>
+        <h2>Popular Categories</h2>
+    </div>
+
+    <div class="category-grid">
+
+        <button class="category-card">👕 Fashion</button>
+        <button class="category-card">📱 Electronics</button>
+        <button class="category-card">👟 Shoes</button>
+        <button class="category-card">🏠 Home</button>
+        <button class="category-card">🎮 Gaming</button>
+        <button class="category-card">🏀 Sports</button>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+
+    <div class="section-heading">
+        <p>SHOP NOW</p>
+        <h2>Featured Products</h2>
+    </div>
+
+    <!-- Products from Supabase will appear here -->
+    <div class="product-grid" id="product-grid">
+
+        <p class="loading-products">
+            Loading amazing products...
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- WHY RICHHUB -->
+<section class="why-richhub">
+
+    <div class="why-card">
+        <span>🚚</span>
+        <h3>Easy Shopping</h3>
+        <p>Discover products from different stores in one place.</p>
+    </div>
+
+    <div class="why-card">
+        <span>🔒</span>
+        <h3>Secure Accounts</h3>
+        <p>Create an account and manage your shopping easily.</p>
+    </div>
+
+    <div class="why-card">
+        <span>⭐</span>
+        <h3>Quality Products</h3>
+        <p>Explore products from stores and growing businesses.</p>
+    </div>
+
+</section>
+
+
+<!-- STORE OWNER SECTION -->
+<section class="store-owner">
+
+    <div class="store-owner-content">
+
+        <p class="hero-tag">GROW WITH RICHHUB</p>
+
+        <h2>Want to Become a Store Keeper?</h2>
+
+        <p>
+            Create your own online store, add your products,
+            manage orders, and grow your business with RichHub.
+        </p>
+
+        <div class="store-owner-buttons">
+
+            <a href="HTML/signup.html" class="primary-btn">
+                Create Your Store
+            </a>
+
+            <a href="HTML/login.html" class="secondary-btn">
+                Already Have a Store? Log In
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-logo">
+        <h2>RichHub</h2>
+        <p>Your place to discover, shop, and grow.</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#categories">Categories</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 RichHub. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="store.js"></script>
+
+</body>
+                                </html>
