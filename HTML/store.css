@@ -559,3 +559,153 @@ MOBILE RESPONSIVENESS
 }
 
 }
+
+
+
+
+
+/* =========================
+BUSINESS COLOR THEME
+========================= */
+
+body {
+background: #eef2f7;
+color: #172033;
+}
+
+/* NAVIGATION */
+
+.navbar {
+background: #0f172a;
+}
+
+.logo a {
+color: #ffffff;
+}
+
+.nav-links a {
+color: #cbd5e1;
+}
+
+.nav-links a:hover {
+color: #ffffff;
+}
+
+.login-btn {
+color: #ffffff;
+border: 1px solid #334155;
+}
+
+.signup-btn {
+background: #2563eb;
+color: white;
+}
+
+.signup-btn:hover {
+background: #1d4ed8;
+}
+
+/* HERO */
+
+.hero {
+background: linear-gradient(135deg, #0f172a, #1e3a5f);
+color: white;
+}
+
+.hero-description {
+color: #cbd5e1;
+}
+
+.primary-btn {
+background: #2563eb;
+color: white;
+}
+
+.primary-btn:hover {
+background: #1d4ed8;
+}
+
+.secondary-btn {
+background: #ffffff;
+color: #172033;
+}
+
+/* SEARCH */
+
+.search-section {
+background: #e8eef6;
+}
+
+.search-box button {
+background: #2563eb;
+}
+
+/* CATEGORIES */
+
+.categories {
+background: #ffffff;
+}
+
+.category-card {
+background: #f8fafc;
+color: #172033;
+border: 1px solid #e2e8f0;
+}
+
+.category-card:hover {
+background: #eff6ff;
+}
+
+/* PRODUCTS */
+
+.products {
+background: #eef2f7;
+}
+
+/* WHY RICHHUB */
+
+.why-richhub {
+background: #ffffff;
+}
+
+.why-card {
+background: #f1f5f9;
+border: 1px solid #e2e8f0;
+}
+
+/* STORE OWNER SECTION */
+
+.store-owner {
+background: linear-gradient(135deg, #0f172a, #172554);
+}
+
+.store-owner .primary-btn {
+background: #2563eb;
+color: white;
+}
+
+.store-owner .secondary-btn {
+background: transparent;
+border: 1px solid #64748b;
+color: white;
+}
+
+/* FOOTER */
+
+footer {
+background: #0f172a;
+color: white;
+}
+
+.footer-logo p,
+.copyright {
+color: #94a3b8;
+}
+
+.footer-links a {
+color: #cbd5e1;
+}
+
+.footer-links a:hover {
+color: white;
+  }
