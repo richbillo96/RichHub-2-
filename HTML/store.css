@@ -1,1 +1,561 @@
 
+/* =========================
+RICHHUB - GLOBAL STYLES
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f7f7f7;
+color: #222;
+line-height: 1.6;
+}
+
+/* =========================
+NAVIGATION BAR
+========================= */
+
+.navbar {
+width: 100%;
+min-height: 70px;
+padding: 15px 6%;
+background: #ffffff;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+position: sticky;
+top: 0;
+z-index: 1000;
+
+box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+}
+
+.logo a {
+text-decoration: none;
+color: #111;
+font-size: 28px;
+font-weight: bold;
+}
+
+.nav-links {
+display: flex;
+gap: 25px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #333;
+font-weight: 500;
+}
+
+.nav-links a:hover {
+color: #000;
+}
+
+.nav-actions {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.login-btn,
+.signup-btn {
+text-decoration: none;
+padding: 9px 16px;
+border-radius: 7px;
+font-weight: bold;
+}
+
+.login-btn {
+color: #222;
+}
+
+.signup-btn {
+background: #111;
+color: white;
+}
+
+.cart-btn {
+border: none;
+background: transparent;
+font-size: 16px;
+cursor: pointer;
+font-weight: bold;
+}
+
+/* =========================
+HERO SECTION
+========================= */
+
+.hero {
+min-height: 520px;
+padding: 70px 8%;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+
+background: #ffffff;
+
+}
+
+.hero-content {
+max-width: 600px;
+}
+
+.hero-tag {
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+.hero h1 {
+font-size: 60px;
+line-height: 1.1;
+margin-bottom: 20px;
+}
+
+.hero h1 span {
+display: block;
+}
+
+.hero-description {
+font-size: 18px;
+color: #666;
+max-width: 500px;
+margin-bottom: 30px;
+}
+
+.hero-buttons {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+display: inline-block;
+padding: 14px 24px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.primary-btn {
+background: #111;
+color: white;
+}
+
+.primary-btn:hover {
+transform: translateY(-3px);
+}
+
+.secondary-btn {
+background: #eeeeee;
+color: #222;
+}
+
+.secondary-btn:hover {
+background: #dddddd;
+}
+
+.hero-image {
+flex: 1;
+max-width: 500px;
+}
+
+.hero-image img {
+width: 100%;
+height: 400px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+/* =========================
+SEARCH
+========================= */
+
+.search-section {
+padding: 30px 8%;
+background: #f7f7f7;
+}
+
+.search-box {
+max-width: 700px;
+margin: auto;
+
+display: flex;
+
+background: white;
+border-radius: 10px;
+
+overflow: hidden;
+
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+}
+
+.search-box input {
+flex: 1;
+
+border: none;
+
+padding: 17px;
+
+outline: none;
+
+font-size: 16px;
+
+}
+
+.search-box button {
+border: none;
+
+background: #111;
+
+color: white;
+
+padding: 0 30px;
+
+cursor: pointer;
+
+font-size: 16px;
+
+}
+
+/* =========================
+SECTIONS
+========================= */
+
+.categories,
+.products {
+padding: 70px 8%;
+}
+
+.section-heading {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.section-heading p {
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.section-heading h2 {
+font-size: 38px;
+}
+
+/* =========================
+CATEGORIES
+========================= */
+
+.category-grid {
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+gap: 20px;
+
+max-width: 1000px;
+
+margin: auto;
+
+}
+
+.category-card {
+padding: 25px 15px;
+
+border: none;
+
+background: white;
+
+border-radius: 12px;
+
+font-size: 17px;
+
+cursor: pointer;
+
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+transition: 0.3s;
+
+}
+
+.category-card:hover {
+transform: translateY(-5px);
+}
+
+/* =========================
+PRODUCTS
+========================= */
+
+.product-grid {
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+gap: 25px;
+
+}
+
+.loading-products {
+text-align: center;
+grid-column: 1 / -1;
+color: #666;
+}
+
+/* =========================
+WHY RICHHUB
+========================= */
+
+.why-richhub {
+padding: 70px 8%;
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+gap: 25px;
+
+background: #ffffff;
+
+}
+
+.why-card {
+text-align: center;
+
+padding: 30px;
+
+background: #f7f7f7;
+
+border-radius: 15px;
+
+}
+
+.why-card span {
+font-size: 40px;
+}
+
+.why-card h3 {
+margin: 15px 0 10px;
+}
+
+.why-card p {
+color: #666;
+}
+
+/* =========================
+STORE OWNER SECTION
+========================= */
+
+.store-owner {
+padding: 80px 8%;
+
+background: #111;
+
+color: white;
+
+text-align: center;
+
+}
+
+.store-owner-content {
+max-width: 700px;
+
+margin: auto;
+
+}
+
+.store-owner h2 {
+font-size: 45px;
+
+margin-bottom: 20px;
+
+}
+
+.store-owner p {
+max-width: 600px;
+
+margin: 0 auto 30px;
+
+color: #cccccc;
+
+font-size: 18px;
+
+}
+
+.store-owner-buttons {
+display: flex;
+
+justify-content: center;
+
+gap: 15px;
+
+flex-wrap: wrap;
+
+}
+
+.store-owner .primary-btn {
+background: white;
+
+color: #111;
+
+}
+
+.store-owner .secondary-btn {
+background: transparent;
+
+border: 1px solid white;
+
+color: white;
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+padding: 50px 8%;
+
+background: #ffffff;
+
+text-align: center;
+
+}
+
+.footer-logo h2 {
+font-size: 28px;
+
+margin-bottom: 8px;
+
+}
+
+.footer-logo p {
+color: #666;
+
+margin-bottom: 20px;
+
+}
+
+.footer-links {
+margin-bottom: 25px;
+}
+
+.footer-links a {
+text-decoration: none;
+
+color: #333;
+
+margin: 0 10px;
+
+}
+
+.copyright {
+color: #888;
+
+font-size: 14px;
+
+}
+
+/* =========================
+MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 800px) {
+
+.navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+}
+
+.hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 60px 8%;
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero-description {
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+.hero-buttons {
+    justify-content: center;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    height: 300px;
+}
+
+.store-owner h2 {
+    font-size: 34px;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.nav-actions {
+    width: 100%;
+
+    justify-content: center;
+}
+
+.nav-links {
+    gap: 15px;
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+}
+
+.search-box button {
+    padding: 0 18px;
+}
+
+}
