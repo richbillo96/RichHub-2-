@@ -1,159 +1,562 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>RichHub - Quality Products</title>
+    <title>RichHub - Build Your Store. Grow Rich.</title>
+
+    <meta name="description"
+          content="RichHub helps you build your online store, sell products and grow your business.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="index.html" class="logo">
-            🛍️ <span>Rich</span>Hub
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">R</span>
+            <span>RichHub</span>
         </a>
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Categories</a>
-            <a href="#">Contact</a>
-        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">About</a>
+        </nav>
 
         <div class="nav-buttons">
-            <a href="HTML/login.html" class="login-nav">Log In</a>
-            <a href="HTML/signup.html" class="signup-nav">Sign Up</a>
-        </div>
-    </nav>
+            <button class="login-btn" onclick="login()">
+                Log in
+            </button>
 
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <p class="welcome">Welcome to RichHub</p>
-
-            <h1>
-                Your One-Stop Shop<br>
-                <span>For Quality Products</span>
-            </h1>
-
-            <p class="description">
-                Discover amazing products, unbeatable prices,
-                and the best shopping experience.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="HTML/login.html" class="main-btn">
-                    👤 &nbsp; Log In
-                </a>
-
-                <a href="HTML/signup.html" class="second-btn">
-                    👤＋ &nbsp; Sign Up
-                </a>
-
-            </div>
-
+            <button class="primary-btn" onclick="getStarted()">
+                Get Started
+            </button>
         </div>
 
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
 
-        <!-- SHOPPING VISUAL -->
-        <div class="hero-visual">
+    </header>
 
-            <div class="circle"></div>
 
-            <div class="shopping-cart">
-                🛒
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    🚀 Build your business with RichHub
+                </div>
+
+                <h1>
+                    Build Your Store.<br>
+                    Sell Anything.<br>
+                    <span>Grow Rich.</span>
+                </h1>
+
+                <p>
+                    RichHub gives you everything you need to create
+                    your online store, discover products, manage orders
+                    and grow your business.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn big-btn"
+                            onclick="getStarted()">
+                        Start 3-Day Free Trial →
+                    </button>
+
+                    <button class="secondary-btn"
+                            onclick="showHowItWorks()">
+                        ▶ How It Works
+                    </button>
+
+                </div>
+
+                <div class="hero-info">
+
+                    <span>✓ No credit card</span>
+                    <span>✓ Easy setup</span>
+                    <span>✓ 24/7 support</span>
+
+                </div>
+
             </div>
 
-            <div class="product backpack">
-                🎒
+
+            <!-- STORE PREVIEW -->
+
+            <div class="hero-preview">
+
+                <div class="preview-glow"></div>
+
+                <div class="store-preview">
+
+                    <div class="preview-top">
+
+                        <div class="mini-logo">
+                            <span>R</span> RichHub
+                        </div>
+
+                        <div class="preview-nav">
+                            Home &nbsp;&nbsp; Shop &nbsp;&nbsp;
+                            Collections &nbsp;&nbsp; Contact
+                        </div>
+
+                    </div>
+
+                    <div class="preview-hero">
+
+                        <div>
+                            <small>NEW ARRIVALS</small>
+
+                            <h2>
+                                Summer Collection
+                            </h2>
+
+                            <p>
+                                Up to 50% Off
+                            </p>
+
+                            <button>
+                                Shop Now
+                            </button>
+                        </div>
+
+                        <div class="preview-shoe">
+                            👟
+                        </div>
+
+                    </div>
+
+                    <div class="preview-features">
+
+                        <div>
+                            🚚
+                            <small>Fast Shipping</small>
+                        </div>
+
+                        <div>
+                            💳
+                            <small>Secure Payment</small>
+                        </div>
+
+                        <div>
+                            ⭐
+                            <small>Premium Quality</small>
+                        </div>
+
+                        <div>
+                            🛡️
+                            <small>24/7 Support</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="product shoe">
-                👟
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section id="features" class="features-section">
+
+            <div class="section-heading">
+
+                <span>POWERFUL TOOLS</span>
+
+                <h2>
+                    Everything You Need To
+                    <span>Succeed</span>
+                </h2>
+
+                <p>
+                    Build, manage and grow your online business
+                    from one powerful platform.
+                </p>
+
             </div>
 
-            <div class="product phone">
-                📱
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🏪</div>
+
+                    <h3>Create Your Store</h3>
+
+                    <p>
+                        Launch your own online store in minutes.
+                        No coding required.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🔎</div>
+
+                    <h3>Find Winning Products</h3>
+
+                    <p>
+                        Discover products from suppliers and
+                        start selling online.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">📦</div>
+
+                    <h3>Manage Orders</h3>
+
+                    <p>
+                        Track orders and manage your customers
+                        from one simple dashboard.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">📣</div>
+
+                    <h3>Marketing Tools</h3>
+
+                    <p>
+                        Promote your products and increase
+                        your sales.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">💰</div>
+
+                    <h3>Earn More</h3>
+
+                    <p>
+                        Build your business and grow your
+                        income with RichHub.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="product headphones">
-                🎧
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section id="products" class="products-section">
+
+            <div class="section-heading products-heading">
+
+                <div>
+                    <span>HOT RIGHT NOW</span>
+
+                    <h2>
+                        Trending Products
+                    </h2>
+                </div>
+
+                <button onclick="viewProducts()">
+                    View All Products →
+                </button>
+
             </div>
 
-            <div class="plant">
-                🪴
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        🎧
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Wireless Earbuds</h3>
+
+                        <div class="product-bottom">
+
+                            <strong>$24.99</strong>
+
+                            <span>⭐ 4.8</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image shoe">
+                        👟
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Sports Running Shoes</h3>
+
+                        <div class="product-bottom">
+
+                            <strong>$34.99</strong>
+
+                            <span>⭐ 4.7</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        ⌚
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Smart Watch Series 8</h3>
+
+                        <div class="product-bottom">
+
+                            <strong>$39.99</strong>
+
+                            <span>⭐ 4.9</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        💡
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>LED Night Lamp</h3>
+
+                        <div class="product-bottom">
+
+                            <strong>$14.99</strong>
+
+                            <span>⭐ 4.8</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- BENEFITS -->
-    <section class="benefits">
+        <!-- ================= PRICING ================= -->
 
-        <div class="benefit">
-            <div class="benefit-icon">🛡️</div>
+        <section id="pricing" class="pricing-section">
 
-            <div>
-                <h3>Secure Shopping</h3>
-                <p>Your security is our top priority.</p>
+            <div class="section-heading">
+
+                <span>SIMPLE PRICING</span>
+
+                <h2>
+                    Start Building Today
+                </h2>
+
+                <p>
+                    Try RichHub free and upgrade when you're ready.
+                </p>
+
             </div>
-        </div>
 
 
-        <div class="benefit">
-            <div class="benefit-icon">🚚</div>
+            <div class="pricing-card">
 
-            <div>
-                <h3>Fast Delivery</h3>
-                <p>Get your orders delivered quickly.</p>
+                <div>
+
+                    <span class="pricing-label">
+                        RICHHUB STARTER
+                    </span>
+
+                    <h3>
+                        3-Day Free Trial
+                    </h3>
+
+                    <p>
+                        Start your online business without
+                        paying upfront.
+                    </p>
+
+                    <div class="price">
+                        $0
+                        <small>for 3 days</small>
+                    </div>
+
+                </div>
+
+
+                <div class="pricing-features">
+
+                    <span>✓ Create your store</span>
+                    <span>✓ Add products</span>
+                    <span>✓ Manage orders</span>
+                    <span>✓ Store dashboard</span>
+                    <span>✓ Cancel anytime</span>
+
+                </div>
+
+
+                <button class="primary-btn big-btn"
+                        onclick="getStarted()">
+                    Start Free Trial →
+                </button>
+
             </div>
-        </div>
+
+        </section>
 
 
-        <div class="benefit">
-            <div class="benefit-icon">🏆</div>
+        <!-- ================= ABOUT ================= -->
 
-            <div>
-                <h3>Best Quality</h3>
-                <p>We provide only quality products.</p>
+        <section id="about" class="about-section">
+
+            <div class="about-content">
+
+                <span>ABOUT RICHHUB</span>
+
+                <h2>
+                    Your Business.
+                    <span>Your Future.</span>
+                </h2>
+
+                <p>
+                    RichHub is being built to make online business
+                    easier for everyone. Create a store, discover
+                    products, manage customers and grow your brand
+                    from one place.
+                </p>
+
+                <button class="secondary-btn"
+                        onclick="getStarted()">
+                    Start Your Journey →
+                </button>
+
             </div>
-        </div>
 
+            <div class="about-box">
 
-        <div class="benefit">
-            <div class="benefit-icon">🎧</div>
+                <div class="about-stat">
+                    <strong>24/7</strong>
+                    <span>Business Access</span>
+                </div>
 
-            <div>
-                <h3>Customer Support</h3>
-                <p>We're here to help you anytime.</p>
+                <div class="about-stat">
+                    <strong>∞</strong>
+                    <span>Products</span>
+                </div>
+
+                <div class="about-stat">
+                    <strong>1</strong>
+                    <span>Powerful Dashboard</span>
+                </div>
+
             </div>
-        </div>
 
-    </section>
+        </section>
 
 
-    <!-- FOOTER -->
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="cta-content">
+
+                <div class="gift-icon">
+                    🎁
+                </div>
+
+                <div>
+
+                    <h2>
+                        Ready to Build Your Store?
+                    </h2>
+
+                    <p>
+                        Start your 3-day free trial today.
+                        No credit card required.
+                    </p>
+
+                </div>
+
+                <button class="white-btn"
+                        onclick="getStarted()">
+                    Start Free Trial →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <div class="footer-content">
+        <div class="footer-main">
 
             <div class="footer-brand">
 
-                <h2>🛍️ <span>Rich</span>Hub</h2>
+                <a href="#" class="logo">
+                    <span class="logo-icon">R</span>
+                    <span>RichHub</span>
+                </a>
 
                 <p>
-                    RichHub is your trusted online store
-                    for quality products at the best prices.
+                    Build your store, sell products
+                    and grow your wealth online.
                 </p>
 
             </div>
@@ -161,49 +564,55 @@
 
             <div class="footer-column">
 
-                <h3>Quick Links</h3>
+                <h4>Platform</h4>
 
-                <a href="index.html">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Categories</a>
-                <a href="#">Contact Us</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Categories</h3>
-
-                <a href="#">Electronics</a>
-                <a href="#">Fashion</a>
-                <a href="#">Home & Kitchen</a>
-                <a href="#">Sports</a>
+                <a href="#features">Features</a>
+                <a href="#products">Products</a>
+                <a href="#pricing">Pricing</a>
 
             </div>
 
 
             <div class="footer-column">
 
-                <h3>Follow Us</h3>
+                <h4>Company</h4>
 
-                <div class="socials">
-                    <a href="#">f</a>
-                    <a href="#">◎</a>
-                    <a href="#">𝕏</a>
-                    <a href="#">◉</a>
-                </div>
+                <a href="#about">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Legal</h4>
+
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
 
             </div>
 
         </div>
 
 
-        <div class="copyright">
-            © 2026 RichHub. All Rights Reserved.
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 RichHub By Nana Amoako OFORI-ASARE. All rights reserved.
+            </span>
+
+            <span>
+                Built for entrepreneurs 🚀
+            </span>
+
         </div>
 
     </footer>
 
+
+    <script src="script.js"></script>
+
 </body>
-</html>
+                </html>
